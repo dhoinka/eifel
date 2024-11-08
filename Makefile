@@ -32,10 +32,6 @@ deps:
 fmt:
 	$(GOCMD) fmt ./...
 
-# Lint the code
-lint:
-	golangci-lint run
-
 # Run the project
 run:
 	$(GOBUILD) -o $(BINARY_NAME) ./cmd/$(BINARY_NAME)
